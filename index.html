@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Run With Passion - Blog Hobi Lari</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .article-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+        }
+        
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #2563eb;
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full bg-gradient-to-br from-blue-50 to-white">
+  <div class="w-full h-full overflow-auto"><!-- Header -->
+   <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+     <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+       <svg class="w-10 h-10 text-blue-500" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+       </svg>
+       <div>
+        <h1 id="site-title" class="text-2xl font-bold text-gray-800">Run With Passion</h1>
+        <p id="site-tagline" class="text-sm text-gray-600">Cerita dan Tips Seputar Lari</p>
+       </div>
+      </div>
+      <nav class="hidden md:flex space-x-6"><a href="#home" class="nav-link text-gray-700 font-medium">Beranda</a> <a href="#articles" class="nav-link text-gray-700 font-medium">Artikel</a> <a href="#tips" class="nav-link text-gray-700 font-medium">Tips</a> <a href="#contact" class="nav-link text-gray-700 font-medium">Kontak</a>
+      </nav>
+     </div>
+    </div>
+   </header><!-- Hero Section -->
+   <section id="home" class="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-up">
+     <div class="mb-6">
+      <svg class="w-20 h-20 mx-auto text-white opacity-90" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+      </svg>
+     </div>
+     <h2 id="hero-title" class="text-4xl md:text-5xl font-bold mb-4">Mulai Perjalanan Lari Anda Hari Ini</h2>
+     <p id="hero-subtitle" class="text-xl mb-8 text-blue-100">Bergabunglah dengan komunitas pelari dan temukan tips, inspirasi, serta motivasi untuk gaya hidup sehat</p><button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition duration-300 shadow-lg"> Mulai Membaca 📖 </button>
+    </div>
+   </section><!-- Featured Articles Section -->
+   <section id="articles" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-3">Artikel Terbaru</h2>
+      <div class="w-20 h-1 bg-blue-500 mx-auto rounded"></div>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"><!-- Article 1 -->
+      <article class="article-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+       <div class="bg-gradient-to-br from-blue-400 to-blue-500 h-48 flex items-center justify-center">
+        <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        </svg>
+       </div>
+       <div class="p-5"><span class="text-xs font-semibold text-blue-600 uppercase">Kesehatan</span>
+        <h3 id="article1-title" class="text-lg font-bold text-gray-800 mt-2 mb-3">Manfaat Lari Bagi Kesehatan</h3>
+        <p class="text-gray-600 text-sm mb-4">Temukan berbagai manfaat lari untuk kesehatan fisik dan mental Anda. Dari jantung yang lebih kuat hingga mood yang lebih baik.</p><button class="text-blue-600 font-semibold text-sm hover:text-blue-700">Baca Selengkapnya →</button>
+       </div>
+      </article><!-- Article 2 -->
+      <article class="article-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+       <div class="bg-gradient-to-br from-green-400 to-green-500 h-48 flex items-center justify-center">
+        <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+       </div>
+       <div class="p-5"><span class="text-xs font-semibold text-green-600 uppercase">Pemula</span>
+        <h3 id="article2-title" class="text-lg font-bold text-gray-800 mt-2 mb-3">Tips Memulai Hobi Lari</h3>
+        <p class="text-gray-600 text-sm mb-4">Panduan lengkap untuk pemula yang ingin memulai hobi lari. Mulai dari pemanasan hingga teknik berlari yang benar.</p><button class="text-blue-600 font-semibold text-sm hover:text-blue-700">Baca Selengkapnya →</button>
+       </div>
+      </article><!-- Article 3 -->
+      <article class="article-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+       <div class="bg-gradient-to-br from-purple-400 to-purple-500 h-48 flex items-center justify-center">
+        <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+        </svg>
+       </div>
+       <div class="p-5"><span class="text-xs font-semibold text-purple-600 uppercase">Perlengkapan</span>
+        <h3 id="article3-title" class="text-lg font-bold text-gray-800 mt-2 mb-3">Perlengkapan Lari Wajib</h3>
+        <p class="text-gray-600 text-sm mb-4">Rekomendasi sepatu lari, pakaian olahraga, dan perlengkapan lainnya yang wajib dimiliki setiap pelari.</p><button class="text-blue-600 font-semibold text-sm hover:text-blue-700">Baca Selengkapnya →</button>
+       </div>
+      </article><!-- Article 4 -->
+      <article class="article-card bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+       <div class="bg-gradient-to-br from-orange-400 to-orange-500 h-48 flex items-center justify-center">
+        <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+       </div>
+       <div class="p-5"><span class="text-xs font-semibold text-orange-600 uppercase">Latihan</span>
+        <h3 id="article4-title" class="text-lg font-bold text-gray-800 mt-2 mb-3">Jadwal Latihan Mingguan</h3>
+        <p class="text-gray-600 text-sm mb-4">Panduan jadwal latihan mingguan untuk menjaga stamina dan meningkatkan performa lari Anda secara konsisten.</p><button class="text-blue-600 font-semibold text-sm hover:text-blue-700">Baca Selengkapnya →</button>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section><!-- Tips Section -->
+   <section id="tips" class="py-16 bg-blue-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-3">Tips Cepat untuk Pelari</h2>
+      <div class="w-20 h-1 bg-blue-500 mx-auto rounded"></div>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <div class="text-4xl mb-4">
+        💧
+       </div>
+       <h3 class="text-xl font-bold text-gray-800 mb-3">Hidrasi yang Cukup</h3>
+       <p class="text-gray-600">Minum air yang cukup sebelum, selama, dan setelah lari untuk menjaga performa optimal.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <div class="text-4xl mb-4">
+        🔥
+       </div>
+       <h3 class="text-xl font-bold text-gray-800 mb-3">Pemanasan Wajib</h3>
+       <p class="text-gray-600">Lakukan pemanasan 5-10 menit sebelum lari untuk menghindari cedera dan mempersiapkan otot.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <div class="text-4xl mb-4">
+        👟
+       </div>
+       <h3 class="text-xl font-bold text-gray-800 mb-3">Sepatu yang Tepat</h3>
+       <p class="text-gray-600">Pilih sepatu lari yang sesuai dengan bentuk kaki dan jenis lari Anda untuk kenyamanan maksimal.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="contact" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+     <h2 class="text-3xl font-bold text-gray-800 mb-3">Tetap Terhubung</h2>
+     <div class="w-20 h-1 bg-blue-500 mx-auto rounded mb-8"></div>
+     <p class="text-gray-600 mb-8">Ikuti kami di media sosial untuk update artikel terbaru dan motivasi harian!</p>
+     <div class="flex justify-center space-x-6"><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition duration-300">
+       <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" />
+       </svg></a> <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white hover:scale-110 transition duration-300">
+       <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+       </svg></a> <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center text-white hover:scale-110 transition duration-300">
+       <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+       </svg></a>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+     <p id="footer-text" class="text-gray-300">© 2024 Run With Passion. All rights reserved.</p>
+     <p class="text-gray-400 text-sm mt-2">Dibuat dengan ❤️ untuk komunitas pelari Indonesia</p>
+    </div>
+   </footer>
+  </div>
+  <script>
+        const defaultConfig = {
+            site_title: "Run With Passion",
+            site_tagline: "Cerita dan Tips Seputar Lari",
+            hero_title: "Mulai Perjalanan Lari Anda Hari Ini",
+            hero_subtitle: "Bergabunglah dengan komunitas pelari dan temukan tips, inspirasi, serta motivasi untuk gaya hidup sehat",
+            article1_title: "Manfaat Lari Bagi Kesehatan",
+            article2_title: "Tips Memulai Hobi Lari",
+            article3_title: "Perlengkapan Lari Wajib",
+            article4_title: "Jadwal Latihan Mingguan",
+            footer_text: "© 2024 Run With Passion. All rights reserved.",
+            primary_color: "#3b82f6",
+            secondary_color: "#60a5fa",
+            text_color: "#1f2937",
+            accent_color: "#10b981",
+            background_color: "#f0f9ff"
+        };
+
+        async function onConfigChange(config) {
+            document.getElementById('site-title').textContent = config.site_title || defaultConfig.site_title;
+            document.getElementById('site-tagline').textContent = config.site_tagline || defaultConfig.site_tagline;
+            document.getElementById('hero-title').textContent = config.hero_title || defaultConfig.hero_title;
+            document.getElementById('hero-subtitle').textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+            document.getElementById('article1-title').textContent = config.article1_title || defaultConfig.article1_title;
+            document.getElementById('article2-title').textContent = config.article2_title || defaultConfig.article2_title;
+            document.getElementById('article3-title').textContent = config.article3_title || defaultConfig.article3_title;
+            document.getElementById('article4-title').textContent = config.article4_title || defaultConfig.article4_title;
+            document.getElementById('footer-text').textContent = config.footer_text || defaultConfig.footer_text;
+
+            const primaryColor = config.primary_color || defaultConfig.primary_color;
+            const secondaryColor = config.secondary_color || defaultConfig.secondary_color;
+            const textColor = config.text_color || defaultConfig.text_color;
+            const accentColor = config.accent_color || defaultConfig.accent_color;
+            const backgroundColor = config.background_color || defaultConfig.background_color;
+
+            document.body.style.background = `linear-gradient(to bottom right, ${backgroundColor}, white)`;
+            
+            const heroSection = document.querySelector('section');
+            if (heroSection) {
+                heroSection.style.background = `linear-gradient(to right, ${primaryColor}, ${secondaryColor})`;
+            }
+
+            const headings = document.querySelectorAll('h1, h2, h3');
+            headings.forEach(heading => {
+                heading.style.color = textColor;
+            });
+
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                if (button.classList.contains('bg-white')) {
+                    button.style.color = primaryColor;
+                }
+            });
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [
+                    {
+                        get: () => config.primary_color || defaultConfig.primary_color,
+                        set: (value) => {
+                            config.primary_color = value;
+                            window.elementSdk.setConfig({ primary_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.secondary_color || defaultConfig.secondary_color,
+                        set: (value) => {
+                            config.secondary_color = value;
+                            window.elementSdk.setConfig({ secondary_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.text_color || defaultConfig.text_color,
+                        set: (value) => {
+                            config.text_color = value;
+                            window.elementSdk.setConfig({ text_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.accent_color || defaultConfig.accent_color,
+                        set: (value) => {
+                            config.accent_color = value;
+                            window.elementSdk.setConfig({ accent_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.background_color || defaultConfig.background_color,
+                        set: (value) => {
+                            config.background_color = value;
+                            window.elementSdk.setConfig({ background_color: value });
+                        }
+                    }
+                ],
+                borderables: [],
+                fontEditable: undefined,
+                fontSizeable: undefined
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["site_title", config.site_title || defaultConfig.site_title],
+                ["site_tagline", config.site_tagline || defaultConfig.site_tagline],
+                ["hero_title", config.hero_title || defaultConfig.hero_title],
+                ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
+                ["article1_title", config.article1_title || defaultConfig.article1_title],
+                ["article2_title", config.article2_title || defaultConfig.article2_title],
+                ["article3_title", config.article3_title || defaultConfig.article3_title],
+                ["article4_title", config.article4_title || defaultConfig.article4_title],
+                ["footer_text", config.footer_text || defaultConfig.footer_text]
+            ]);
+        }
+
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ac4325974a887cf',t:'MTc2NTQ0Nzg3My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
